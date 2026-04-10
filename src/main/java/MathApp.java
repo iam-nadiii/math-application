@@ -24,22 +24,23 @@ public class MathApp {
 
 
         // 3. Find and display the area of a circle whose radius is 7.25
-        float area = Math.PI * 7.25 * 7.25;
+        double area = Math.PI * 7.25 * 7.25;
 
-        System.out.println("The area of the circle is " + area + ".");
+        System.out.printf("The area of the circle is %.2f.", area);
+        System.out.println();
 
 
 
         // 4. Find and display the square root a variable after it is set to 5.0
         double finalValue =  Math.sqrt(5.0);
-        System.out.println("The square root of 5.0 is " + finalValue + ".");
+        System.out.printf("The square root of 5.0 is %.2f.\n", finalValue);
 
 
 
 //        5. Find and display the distance between the points (5, 10) and (85, 50)
         double distance = Math.sqrt(Math.pow((85-5), 2) + Math.pow((50-10), 2));
 
-        System.out.println("The distance between the points (5, 10) and (85, 50) is " + distance + ".");
+        System.out.printf("The distance between the points (5, 10) and (85, 50) is %.2f.\n", distance);
 
 
 //        6. Find and display the absolute (positive) value of a variable after it is set to -3.8
@@ -48,7 +49,7 @@ public class MathApp {
         System.out.println("The absolute value of -3.8 is " + absoluteValue + ".");
 
 //        7. Find and display a random number between 0 and 1
-        System.out.println("An example of a random number between 0 and 1 is " + Math.random());
+        System.out.printf("An example of a random number between 0 and 1 is %.2f.\n", Math.random());
 
 //        8. Calculate how many minutes are in 24 days, use a variable for each value you
 //calculate with. BONUS: How many milliseconds?
@@ -57,7 +58,7 @@ public class MathApp {
 
         int numberOfMilliSeconds = numberOfMinutes * 60 * 10;
 
-        System.out.println("Ther are " + numberOfMilliSeconds + " minutes in 24 days.");
+        System.out.println("Ther are " + numberOfMinutes + " minutes in 24 days.");
 
         System.out.println("There are " + numberOfMilliSeconds + " seconds in 24 days. ");
 
